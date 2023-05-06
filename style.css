@@ -5,3 +5,97 @@ img url below:
 https://cdn.pixabay.com/photo/2018/08/21/23/29/forest-3622519_1280.jpg
 */
 
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+
+    /* background image here  */
+    background: url('https://cdn.pixabay.com/photo/2018/08/21/23/29/forest-3622519_1280.jpg') no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 550px;
+    background:rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.wrapper .title h1{
+    color: #28C76F;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.contact-form{
+    display: flex;
+
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.input-fields,
+.msg{
+    width: 48%;
+}
+.input-fields, .input,
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #28C76F;
+    padding: 10px;
+    color: whitesmoke;
+    width: 100%;
+}
+.msg textarea{
+    height: 212px;
+}
+::-webkit-input-placeholder{
+    color: #28C76F;
+}
+::-moz-placeholder{
+    color: #28C76F;
+}
+:-ms-input-placeholder{
+    color: #28C76F;
+}
+.btn{
+    background-image: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: uppercase;
+}
+.btn:hover{
+    background: #49C628;
+}
+
+@media screen and (max-width:600px){
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields,
+    .msg{
+        width: 100%;
+    }
+}
