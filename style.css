@@ -52,7 +52,7 @@ body{
 .msg{
     width: 48%;
 }
-.input-fields, .input,
+.input-fields .input,
 .msg textarea{
     margin: 10px 0;
     background: transparent;
@@ -81,7 +81,7 @@ body{
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
-    text-decoration: uppercase;
+    text-transform: uppercase;
 }
 .btn:hover{
     background: #49C628;
